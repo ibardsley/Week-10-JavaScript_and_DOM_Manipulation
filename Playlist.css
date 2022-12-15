@@ -1,0 +1,24 @@
+body {
+    background-image: url(https://wallpaperaccess.com/full/82165.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+
+.heading > h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+#playlist {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#playlist tr:nth-child(odd){
+    background-color: silver;
+}
+
+#playlist tr:nth-child(even){
+    background-color: goldenrod;
+}

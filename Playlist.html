@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Christmas Playlist</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="Playlist.css">
+</head>
+<body class="container">
+        <br>
+        <div class="card bg-success">
+            <div class="card-body">
+                <div class="heading">
+                    <h3>My Christmas Playlist</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-playlist-artist" class="fs-4 fw-bold">New Artist</label>
+                            <input type="text" class="form-control" id="new-playlist-artist">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-playlist-album" class="fs-4 fw-bold">New Album</label>
+                            <input type="text" class="form-control" id="new-playlist-album">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-playlist-song" class="fs-4 fw-bold">New Song</label>
+                            <input type="text" class="form-control" id="new-playlist-song">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <button id="add" class="btn btn-dark form-control">Add</button>
+            </div>
+        </div>
+        <br>
+
+    <table id="playlist" class="table table-default table-striped">
+        <tr>
+            <th>ID#</th>
+            <th>Artist</th>
+            <th>Album</th>
+            <th>Song</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="Playlist.js"></script>
+</body>
+</html>
