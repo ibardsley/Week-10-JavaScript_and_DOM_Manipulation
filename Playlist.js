@@ -5,14 +5,14 @@ document.getElementById('add').addEventListener('click', () => {
     let row = table.insertRow(-1);
     row.setAttribute('id', `item-${id}`);
     row.insertCell(0).innerHTML = id
-    row.insertCell(1).innerHTML = document.getElementById('new-playlist-artist').value;
-    row.insertCell(2).innerHTML = document.getElementById('new-playlist-album').value;
-    row.insertCell(3).innerHTML = document.getElementById('new-playlist-song').value;
+    row.insertCell(1).innerHTML = document.getElementById('new-artist').value;
+    row.insertCell(2).innerHTML = document.getElementById('new-album').value;
+    row.insertCell(3).innerHTML = document.getElementById('new-song').value;
     let actions = row.insertCell(4);
     actions.appendChild(createDeleteButton(id++));
-    document.getElementById('new-playlist-artist').value = '';
-    document.getElementById('new-playlist-album').value = '';
-    document.getElementById('new-playlist-song').value = '';
+    document.getElementById('new-artist').value = '';
+    document.getElementById('new-album').value = '';
+    document.getElementById('new-song').value = '';
 })
 
 function createDeleteButton(id) {
